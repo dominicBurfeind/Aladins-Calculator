@@ -165,7 +165,7 @@ input:active {
   }
 
   h1 {
-    font-size: 6vw;
+    font-size: 13vw;
   }
 
   main {
@@ -179,11 +179,11 @@ input:active {
 
   .content_container {
     width: 88vw;
-    padding: 2rem;
+    padding: 3rem;
   }
 
   #anzeige {
-    font-size: 3vh;
+    font-size: 5vh;
     width: 50vw;
     height: 7vh;
     margin-bottom: 3rem;
@@ -192,7 +192,7 @@ input:active {
   input {
     width: 90vw;
     height: 6vh;
-    font-size: 2.5vh;
+    font-size: 3.5vh;
   }
 
   .button_container {
@@ -274,3 +274,15 @@ input:active {
     padding-bottom: 0.5rem; /* Adjust padding for button rows on screens between 601px and 1920px */
   }
 }
+
+
+
+
+
+
+
+
+
+
+
+
