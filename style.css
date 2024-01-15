@@ -11,7 +11,6 @@ body {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
   font-style: normal;
-  height: 100%;
   color: white;
 }
 
@@ -132,9 +131,10 @@ input:active {
   justify-content: space-around;
 }
 .füfnte_btn_row {
-  padding-bottom: 1rem;
+  padding-bottom: 0.5rem;
   display: flex;
   justify-content: space-around;
+  width: 5vw;
 }
 
 
@@ -159,63 +159,57 @@ input:active {
 /* Media query für eine Dynamische ansicht für geräte mit 600px max width Geräten*/
 
 @media only screen and (max-width: 600px) {
-  body {
-    margin: 0; /* Remove margin for smaller screens */
-  }
-
   header {
-    margin: 2rem; /* Adjust margin for header on smaller screens */
-    margin-left: 7rem;
+    margin-left: 2rem;
   }
 
   h1 {
-    font-size: 8vw; /* Adjust font size for h1 on smaller screens */
+    font-size: 6vw;
   }
 
   main {
-    margin-top: -8rem; /* Adjust margin for main on smaller screens */
-    height: auto; /* Adjust height for main on smaller screens */
+    margin-top: -4rem;
   }
 
   main img {
-    height: 15vh; /* Adjust height for main img on smaller screens */
-    margin-bottom: 1rem; /* Adjust margin for main img on smaller screens */
-  }
-
-  .container {
-    height: auto; /* Adjust height for container on smaller screens */
+    height: 10vh;
+    margin-bottom: 3rem;
   }
 
   .content_container {
-    width: 80vw; /* Adjust width for content_container on smaller screens */
-    height: auto; /* Adjust height for content_container on smaller screens */
-    padding: 2rem; /* Adjust padding for content_container on smaller screens */
+    width: 88vw;
+    padding: 2rem;
   }
 
   #anzeige {
-    font-size: 4vh; /* Adjust font size for #anzeige on smaller screens */
-    width: 60vw; /* Adjust width for #anzeige on smaller screens */
-    height: 8vh; /* Adjust height for #anzeige on smaller screens */
-    margin-bottom: 2rem; /* Adjust margin for #anzeige on smaller screens */
+    font-size: 3vh;
+    width: 50vw;
+    height: 7vh;
+    margin-bottom: 3rem;
   }
 
   input {
-    width: 15vw; /* Adjust width for input on smaller screens */
-    height: 8vh; /* Adjust height for input on smaller screens */
-    font-size: 3vh; /* Adjust font size for input on smaller screens */
+    width: 90vw;
+    height: 6vh;
+    font-size: 2.5vh;
   }
 
   .button_container {
-    padding: 1rem; /* Adjust padding for button_container on smaller screens */
+    padding: 0.5rem;
   }
 
-  .erste_btn_row,
-  .zweite_btn_row,
-  .dritte_btn_row,
-  .vierte_btn_row,
-  .fünfte_btn_row {
-    padding-bottom: 0.5rem; /* Adjust padding for button rows on smaller screens */
+  #null {
+    width: 40vw;
   }
+
+  #komma-btn {
+    width: 40vw;
+  }
+
+  #ergebnis-btn {
+    width: 40vw;
+  }
+
 }
 
 /*Media query für Geräte von einer width von 600px bis fullscreen*/
@@ -279,15 +273,3 @@ input:active {
     padding-bottom: 0.5rem; /* Adjust padding for button rows on screens between 601px and 1920px */
   }
 }
-
-
-
-
-
-
-
-
-
-
-
-
