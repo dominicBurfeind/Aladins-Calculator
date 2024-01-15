@@ -12,6 +12,7 @@ body {
   font-weight: 500;
   font-style: normal;
   color: white;
+  width: 100%;
 }
 
 
@@ -65,7 +66,7 @@ main img {
   height: 90vh ;
   text-align: center;
   padding: 7rem ;
-  border: 15px solid black;
+  border: 10px solid black;
 }
 
 
