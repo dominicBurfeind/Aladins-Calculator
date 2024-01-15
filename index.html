@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="Author" content="Dominic Burfeind">
+  <link rel="stylesheet" href="style.css">
+
+  <!--Externe Schriftart mit Google API hinzugefügt-->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Roboto:wght@500&display=swap" rel="stylesheet">
+
+  <title>Aladins Calculator</title>
+</head>
+
+<!--Überschrift-->
+<header>
+  <h1>Aladins Calculator</h1>
+</header>
+
+
+<body>
+
+  <main>
+  <!--Logo-->
+    <img src="aladinLogo.png" alt="Aladin">
+    <div class="container">
+     
+
+      <!--Rechner (In Rows aufgeteilt)-->
+      <div class="content_container"> 
+        <div class="result_container">
+          <input type="text" id="anzeige" readonly>
+        </div>
+
+        <div class="button_container">
+        <div class="erste_btn_row">
+          <input type="button" onclick="reset()" value="AC" class="btn" id="ac-btn"></input>
+          <input type="button" onclick="zurück()" value="C" class="btn" id="zurück-btn"></input>
+          <input type="button" value="%" class="btn" id="prozent-btn"></input>
+          <input type="button" onclick="newValue(vorzeichen[3])" value= "/" class="operator" id="division-btn"></input>
+        </div>
+
+        <div class="zweite_btn_row">
+          <input type="button" onclick="newValue(7)" value="7" class="zahl" id="7"></input>
+          <input type="button"  onclick="newValue(8)" value="8" class="zahl" id="8"></input>
+          <input type="button"  onclick="newValue(9)" value="9" class="zahl" id="9"></input>
+          <input type="button"  onclick="newValue(vorzeichen[2])" value= "x"  class="operator" id="multiplikation-btn"></input>
+        </div>
+
+        <div class="dritte_btn_row">
+          <input type="button"  onclick="newValue(4)" value="4" class="zahl" id="4"></input>
+          <input type="button"  onclick="newValue(5)" value="5" class="zahl" id="5"></input>
+          <input type="button"  onclick="newValue(6)" value="6" class="zahl" id="6"></input>
+          <input type="button"  onclick="newValue(vorzeichen[1])" value= "-" class="operator" id="minus-btn"></input>
+        </div>
+
+
+        <div class="vierte_btn_row">
+          <input type="button"  onclick="newValue(1)" value="1" class="zahl" id="1"></input>
+          <input type="button"  onclick="newValue(2)" value="2" class="zahl" id="2"></input>
+          <input type="button"  onclick="newValue(3)" value="3" class="zahl" id="3"></input>
+          <input type="button"  onclick="newValue(vorzeichen[0])" value = "+" class="operator" id="plus-btn"></input>
+        </div>
+
+        <div class="fünfte_btn_row">
+          <input type="button"  value="0" class="zahl" id="0"></input>
+          <input type="button"  onclick="newValue(vorzeichen[4])" value="." class="operator" id="komma-btn"></input>
+          <input type="button" onclick="calculateResult()" value="=" class="operator" id="ergebnis-btn"></input>
+        </div>
+
+        </div>
+      </div>
+    </div>
+  </main>
+  
+
+  <footer>
+     11.01.2024 &copy; Dominic. B
+  </footer>
+
+<script src="script.js"></script>
+</body>
+</html>

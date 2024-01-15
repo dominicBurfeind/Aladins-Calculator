@@ -1,0 +1,293 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+
+/* Font und Hintergrund zum body element hinzugefügt*/
+body {
+  background:  linear-gradient(to bottom, rgba(188, 22, 58, 0.935) 0%, rgb(123, 26, 47) 100% ) ;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-style: normal;
+  height: 100%;
+  color: white;
+}
+
+
+/* Header design*/
+header {
+  text-align: center;
+  margin: 5rem;
+}
+
+h1 {
+  font-size: 10vw;
+  word-spacing: 8px;
+  border-radius: 6px;
+  padding: 1.25rem;
+}
+
+
+/*Content und knopf Design*/
+main {
+
+margin-top: -12.5rem;
+height: 150vh;
+}
+
+
+
+/*Logo alignment */
+main img {
+  display: flex;
+  justify-content: left;
+  height: 20vh;
+  margin-bottom: 2rem;
+}
+
+
+
+/*Div center*/
+.container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 80vh;
+}
+
+
+
+/*Container für content wird bearbeitet und zurecht geschoben*/
+.content_container {
+  border-radius: 15px;
+  width: 60vw;
+  height: 90vh ;
+  text-align: center;
+  padding: 7rem ;
+  border: 15px solid black;
+}
+
+
+#anzeige {
+  font-size: 5vh;
+  border-radius: 4px;
+ background-color: white;
+ color: black;
+  border: 7px solid black;
+  margin-bottom: 4rem;
+  width: 40vw;
+  height: 8vh;
+  text-align: right
+}
+
+
+
+/* Bearbeitung der knöpfe*/
+input {
+  width: 10vw;
+  height: 7vh;
+  margin: 0.10rem;
+  font-size: 3vh;
+  border: 2px solid black;
+  color: rgb(0, 0, 0);
+  border-radius: 40px;
+}
+
+input:active {
+  background-color: rgb(0, 0, 0);
+  color: white;
+}
+
+.button_container {
+  border: 8px solid black;
+  border-radius: 6px;
+  padding: 1.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+
+
+/* Platzierung der knopf zeilen gestallten*/
+.erste_btn_row {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.zweite_btn_row {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.dritte_btn_row {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.vierte_btn_row {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+.füfnte_btn_row {
+  padding-bottom: 1rem;
+  display: flex;
+  justify-content: space-around;
+}
+
+
+/*Die jewiligen knopfklassen gestallten.*/
+.btn {
+  background-color: rgb(150, 120, 205);
+}
+
+.operator {
+  background-color: rgb(197, 141, 35);
+}
+
+.zahl {
+  background-color: rgb(184, 184, 184);
+}
+
+.special {
+  background-color: cornflowerblue;
+}
+
+
+/* Media query für eine Dynamische ansicht für geräte mit 600px max width Geräten*/
+
+@media only screen and (max-width: 600px) {
+  body {
+    margin: 0; /* Remove margin for smaller screens */
+  }
+
+  header {
+    margin: 2rem; /* Adjust margin for header on smaller screens */
+    margin-left: 7rem;
+  }
+
+  h1 {
+    font-size: 8vw; /* Adjust font size for h1 on smaller screens */
+  }
+
+  main {
+    margin-top: -8rem; /* Adjust margin for main on smaller screens */
+    height: auto; /* Adjust height for main on smaller screens */
+  }
+
+  main img {
+    height: 15vh; /* Adjust height for main img on smaller screens */
+    margin-bottom: 1rem; /* Adjust margin for main img on smaller screens */
+  }
+
+  .container {
+    height: auto; /* Adjust height for container on smaller screens */
+  }
+
+  .content_container {
+    width: 80vw; /* Adjust width for content_container on smaller screens */
+    height: auto; /* Adjust height for content_container on smaller screens */
+    padding: 2rem; /* Adjust padding for content_container on smaller screens */
+  }
+
+  #anzeige {
+    font-size: 4vh; /* Adjust font size for #anzeige on smaller screens */
+    width: 60vw; /* Adjust width for #anzeige on smaller screens */
+    height: 8vh; /* Adjust height for #anzeige on smaller screens */
+    margin-bottom: 2rem; /* Adjust margin for #anzeige on smaller screens */
+  }
+
+  input {
+    width: 15vw; /* Adjust width for input on smaller screens */
+    height: 8vh; /* Adjust height for input on smaller screens */
+    font-size: 3vh; /* Adjust font size for input on smaller screens */
+  }
+
+  .button_container {
+    padding: 1rem; /* Adjust padding for button_container on smaller screens */
+  }
+
+  .erste_btn_row,
+  .zweite_btn_row,
+  .dritte_btn_row,
+  .vierte_btn_row,
+  .fünfte_btn_row {
+    padding-bottom: 0.5rem; /* Adjust padding for button rows on smaller screens */
+  }
+}
+
+/*Media query für Geräte von einer width von 600px bis fullscreen*/
+
+
+@media only screen and (min-width: 601px) and (max-width: 1300px) {
+  body {
+    margin: 0; /* Reset margin for the body on screens between 601px and 1920px */
+  }
+
+  header {
+    margin: 2rem; /* Adjust margin for header on screens between 601px and 1920px */
+  }
+
+  h1 {
+    font-size: 8vw; /* Adjust font size for h1 on screens between 601px and 1920px */
+  }
+
+  main {
+    margin-top: -8rem; /* Adjust margin for main on screens between 601px and 1920px */
+    height: auto; /* Adjust height for main on screens between 601px and 1920px */
+  }
+
+  main img {
+    height: 15vh; /* Adjust height for main img on screens between 601px and 1920px */
+    margin-bottom: 1rem; /* Adjust margin for main img on screens between 601px and 1920px */
+  }
+
+  .container {
+    height: auto; /* Adjust height for container on screens between 601px and 1920px */
+  }
+
+  .content_container {
+    width: 80vw; /* Adjust width for content_container on screens between 601px and 1920px */
+    height: auto; /* Adjust height for content_container on screens between 601px and 1920px */
+    padding: 2rem; /* Adjust padding for content_container on screens between 601px and 1920px */
+  }
+
+  #anzeige {
+    font-size: 4vh; /* Adjust font size for #anzeige on screens between 601px and 1920px */
+    width: 60vw; /* Adjust width for #anzeige on screens between 601px and 1920px */
+    height: 9vh; /* Adjust height for #anzeige on screens between 601px and 1920px */
+    margin-bottom: 2rem; /* Adjust margin for #anzeige on screens between 601px and 1920px */
+  }
+
+  input {
+    width: 15vw; /* Adjust width for input on screens between 601px and 1920px */
+    height: 8vh; /* Adjust height for input on screens between 601px and 1920px */
+    font-size: 3vh; /* Adjust font size for input on screens between 601px and 1920px */
+  }
+
+  .button_container {
+    padding: 1rem; /* Adjust padding for button_container on screens between 601px and 1920px */
+  }
+
+  .erste_btn_row,
+  .zweite_btn_row,
+  .dritte_btn_row,
+  .vierte_btn_row,
+  .fünfte_btn_row {
+    padding-bottom: 0.5rem; /* Adjust padding for button rows on screens between 601px and 1920px */
+  }
+}
+
+
+
+
+
+
+
+
+
+
+
+
